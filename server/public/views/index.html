@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>weekend 5 sql stuff</title>
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="vendor/angular-route/angular-route.min.js"></script>
+    <script src="assets/scripts/client.min.js"></script>
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/stylesheet.css">
+    <!--<link href="styles/scss/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />-->
+    <!--<link href="styles/scss/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />-->
+
+
+</head>
+<body>
+<header ng-controller="IndexController">
+    <h1>{{title}}</h1>
+    <p>SASS!!!! just kidding using bootstrap </p>
+
+
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+        <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+    </ul>
+</div>
+</header>
+<div></div>
+<!--<a href="#/view1" class="">Address by User</a>-->
+<!--<a href="#/view2" class="">Show Orders</a>-->
+<div ng-view></div>
+
+    <footer>
+    <p>this is a footer</p>
+    </footer>
+</body>
+</html>
