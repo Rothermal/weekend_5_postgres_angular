@@ -10,7 +10,7 @@ var api = require('./route/api');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use('/user',api);
+app.use('/api',api);
 app.use("/",index);
 app.use(express.static('server/public'));
 

@@ -1,6 +1,23 @@
-
-
 <h1>{{title}}</h1>
+<div class = "view2">
+
+    <form class="talent-form form-group">
+        Start Date: <input type="text" class="form-control" ng-model="order.startDate"/>
+        End Date: <input type="text" class="form-control" ng-model="order.endDate"/>
+
+        <input type="submit" class="form-control" ng-click="checkDate()" value="Check For Orders"/>
+    </form>
+  <ul>
+      <li ng-repeat="order in orders"></li>
+  </ul>
+
+</div>
 
 
-<p>view 2</p>
+Input fields for Start Date and End Date
+When one is selected, display all of the orders for this user within the date range given in a table. Also blow out the data to display:
+All orders fields
+Include address street, city, state, and zip for that order
+Include user’s name
+Sum the total amount spent at the bottom for only the selected orders
+Make sure the amount fields have a dollar sign and proper commas and formatting

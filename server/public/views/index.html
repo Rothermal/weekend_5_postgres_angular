@@ -5,35 +5,36 @@
     <title>weekend 5 sql stuff</title>
     <script src="vendor/angular/angular.min.js"></script>
     <script src="vendor/angular-route/angular-route.min.js"></script>
+    <!--jquery installed to achieve full functionality out of bootstrap-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/bootstrap.min.js"></script>
     <script src="assets/scripts/client.min.js"></script>
     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="styles/stylesheet.css">
+    <!--attempted to use sass, ended up using bootstrap due to time constraints.-->
     <!--<link href="styles/scss/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />-->
     <!--<link href="styles/scss/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />-->
-
-
+    <!--<base href="/">-->
 </head>
 <body>
 <header ng-controller="IndexController">
     <h1>{{title}}</h1>
     <p>SASS!!!! just kidding using bootstrap </p>
-
-
-<div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-        <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-        <li><a href="#">HTML</a></li>
-        <li><a href="#">CSS</a></li>
-        <li><a href="#">JavaScript</a></li>
-    </ul>
-</div>
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">User Name
+            <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li ng-repeat=" user in users" ><a href="#" ng-click="grabId(user.id)" >{{user.name}}</a></li>
+        </ul>
+    </div>
 </header>
-<div></div>
+<a class="btn btn-danger" href="#/view1">User Addresses</a>
+<a class="btn btn-success" href="#/view2">User Orders</a>
+
+
 <!--<a href="#/view1" class="">Address by User</a>-->
 <!--<a href="#/view2" class="">Show Orders</a>-->
 <div ng-view></div>
-
     <footer>
     <p>this is a footer</p>
     </footer>

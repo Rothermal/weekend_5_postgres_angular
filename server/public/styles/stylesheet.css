@@ -1,12 +1,22 @@
+body{
+  margin-left: 15px;
+}
+
 header p {
   color: gold; }
 header h1 {
-  color: red; }
+  color: red;
+  text-align: center;
+}
 
 p {
   color: lime; }
 
 a {
-  color: brown; }
+  color: brown;
+}
+footer {
+  text-align: center;
+}
 
 /*# sourceMappingURL=stylesheet.css.map */

@@ -13,11 +13,16 @@ router.get('/',function(request,response){
 
 
 
-//router.get('/*', function(request, response){
+
+
+
+
+//router.get('/*', function(request, response) {
 //    response.sendFile(path.join(__dirname, '../public/views/index.html'));
+//});
 
-
-/* handle root angular route redirects */
+// nuka catch all script, will use as neccesary.
+///* handle root angular route redirects */
 //router.get('/*', function(req, res, next){
 //    var url = req.originalUrl;
 //    if (url.split('.').length > 1){
@@ -28,7 +33,7 @@ router.get('/',function(request,response){
 //        res.redirect('/#' + url);
 //    }
 //});
-//
+
 //console.log('Route * loaded.');
 
 
