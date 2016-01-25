@@ -2,7 +2,9 @@
  * Created by JFCS on 1/22/16.
  */
 var app = angular.module('myApp',['ngRoute']);
-
+// soo apparently i forgot about the existence of app factorys... would like to go back and
+// refactor all of the global variables and http call functions into factorys. that way i can better access
+// my information
 var globalId = {id:1,name:'No User Selected'};
 var globalOrders = [];
 var globalAddresses = [];

@@ -9,7 +9,7 @@
     </form>
     <p> Orders placed by {{name}}</p>
   <ul>
-      <li ng-repeat="order in orders ">
+      <li ng-repeat="order in orders  ">
           <p> Placed on {{order.order_date | date:'mediumDate'}}</p>
           <p> For the total amount of : {{order.amount | currency}}</p>
           <p> Order Shipped to {{name}}'s {{order.address_type}} </p>
