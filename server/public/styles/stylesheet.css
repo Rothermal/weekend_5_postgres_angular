@@ -10,7 +10,7 @@ header h1 {
 }
 
 p {
-  color: lime; }
+  color: darkblue; }
 
 a {
   color: brown;
@@ -18,5 +18,10 @@ a {
 footer {
   text-align: center;
 }
-
+.view1 {
+  background-color: #C6E746;
+}
+.view2 {
+  background-color: #C6E746;
+}
 /*# sourceMappingURL=stylesheet.css.map */

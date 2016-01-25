@@ -14,29 +14,30 @@
     <!--attempted to use sass, ended up using bootstrap due to time constraints.-->
     <!--<link href="styles/scss/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />-->
     <!--<link href="styles/scss/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />-->
+    <!--having issues getting base href + remove octothropes + $locationProvider + catch all working correctly. currently breaks stuff.
+    <!-- is the catch all suppose to be in index.js route file? or in server.js server file?;-->
     <!--<base href="/">-->
 </head>
 <body>
 <header ng-controller="IndexController">
     <h1>{{title}}</h1>
-    <p>SASS!!!! just kidding using bootstrap </p>
+    <p>SASS!!!! just kidding, used bootstrap</p>
     <div class="dropdown">
         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">User Name
             <span class="caret"></span></button>
         <ul class="dropdown-menu">
-            <li ng-repeat=" user in users" ><a href="#" ng-click="grabId(user.id)" >{{user.name}}</a></li>
+            <li ng-repeat=" user in users" ><a href="#" ng-click="grabId(user)" >{{user.name}}</a></li>
         </ul>
+        <!--<p>Current user Selected : {{name}}</p>-->
     </div>
 </header>
 <a class="btn btn-danger" href="#/view1">User Addresses</a>
 <a class="btn btn-success" href="#/view2">User Orders</a>
 
 
-<!--<a href="#/view1" class="">Address by User</a>-->
-<!--<a href="#/view2" class="">Show Orders</a>-->
 <div ng-view></div>
     <footer>
-    <p>this is a footer</p>
+    <p>this is a footer, someday this will contain awesome footer type things.</p>
     </footer>
 </body>
 </html>

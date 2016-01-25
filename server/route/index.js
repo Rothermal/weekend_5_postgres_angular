@@ -16,7 +16,7 @@ router.get('/',function(request,response){
 
 
 
-
+// joel's catch all script.. will see whose has the better scripts.
 //router.get('/*', function(request, response) {
 //    response.sendFile(path.join(__dirname, '../public/views/index.html'));
 //});

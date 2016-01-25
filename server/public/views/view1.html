@@ -1,10 +1,9 @@
 
-<h1>{{title}}</h1>
+<p>{{title}}</p>
 
 <div class="view1">
-
+<p>Shipping addresses for {{name}}</p>
 <ul>
-    <button ng-click="globeTest()"> test global id</button>
     <li ng-repeat="address in addresses"><p>{{address.address_type}} : {{address.address_street}},<br/>
         {{address.address_city}}, {{address.address_state}} {{address.address_zip}}</p></li>
 </ul>
